@@ -8,16 +8,16 @@ Here is the quick code:
 ## shp2geojson.py
 
 #### Import packages
-import geopandas as gpd
-import matplotlib.pyplot as plt
-import os
+<code>import geopandas as gpd</code>
+<code>import matplotlib.pyplot as plt</code>
+<code>import os</code>
 
 #### Set working directory where you have the shapefile(optional)
-os.chdir("<folder_path>")
+<code>os.chdir("<folder_path>")</code>
 
 #### Read the shapefile
-gdf= gpd.read_file("<file_name>.shp")
-gdf.plot()
+<code>gdf= gpd.read_file("<file_name>.shp")</code>
+<code>gdf.plot()</code>
 
 #### Write GeoJson
-gdf.to_file("<new_file_name>", driver="GeoJSON")
+<code>gdf.to_file("<new_file_name>", driver="GeoJSON")</code>
