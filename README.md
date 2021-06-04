@@ -5,19 +5,19 @@ In my personal experience, direct export to geojson using ArcGIS generates error
 
 Here is the quick code:
 
-# shp2geojson.py
+## shp2geojson.py
 
-# Import packages
+#### Import packages
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import os
 
-# Set working directory where you have the shapefile(optional)
+#### Set working directory where you have the shapefile(optional)
 os.chdir("<folder_path>")
 
-# Read the shapefile
+#### Read the shapefile
 gdf= gpd.read_file("<file_name>.shp")
 gdf.plot()
 
-# Write GeoJson
+#### Write GeoJson
 gdf.to_file("<new_file_name>", driver="GeoJSON")
