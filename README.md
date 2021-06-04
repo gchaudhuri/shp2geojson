@@ -9,8 +9,8 @@ Here is the quick code:
 
 #### Import packages
 <code>import geopandas as gpd</code>
-<code>import matplotlib.pyplot as plt</code>
-<code>import os</code>
+<p><code>import matplotlib.pyplot as plt</code></p>
+<p><code>import os</code></p>
 
 #### Set working directory where you have the shapefile(optional)
 <code>os.chdir("<folder_path>")</code>
